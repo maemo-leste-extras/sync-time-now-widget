@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=SyncTimeNow
+Icon=general_email 
+Comment=Sync time from Internet
+Category=permanent
+Type=default
+X-Path=lib-sync-time-now-menu-widget.so

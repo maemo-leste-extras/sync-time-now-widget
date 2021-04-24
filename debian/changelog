@@ -1,0 +1,24 @@
+sync-time-now-widget (0.4) unstable; urgency=low
+
+  *  Icon fix2 by: Stefan Zwanenburg
+  *  Fixed clock refresh by: Stefan Zwanenburg
+
+ -- Aapo Rantalainen <aapo.rantalainen@gmail.com>  Fri,  06 May 2011 23:08:08 +0200
+
+sync-time-now-widget (0.3) unstable; urgency=low
+
+  *  Icons fixed by: Stefan Zwanenburg
+
+ -- Aapo Rantalainen <aapo.rantalainen@gmail.com>  Fri,  06 May 2011 07:35:08 +0200
+
+sync-time-now-widget (0.2) unstable; urgency=low
+
+  *  Fixed type on installation process.
+
+ -- Aapo Rantalainen <aapo.rantalainen@gmail.com>  Wed,  04 May 2011 13:17:08 +0200
+
+sync-time-now-widget (0.1) unstable; urgency=low
+
+  *  First working version. Just syncs time from Internet when clicked
+
+ -- Aapo Rantalainen <aapo.rantalainen@gmail.com>  Wed,  04 May 2011 10:26:08 +0200

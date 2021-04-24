@@ -1,0 +1,13 @@
+Source: sync-time-now-widget
+Section: user/network
+Priority: extra
+Maintainer: Aapo Rantalainen <aapo.rantalainen@gmail.com>
+Build-Depends: debhelper (>= 5), libhildondesktop1-dev, libhildon1-dev, libgtk2.0-dev, libtime-dev
+Standards-Version: 3.7.2
+
+Package: sync-time-now-widget
+Architecture: any
+Depends: ${shlibs:Depends}, openrdate
+Description: Status menu widget: button to sync time with rdate (from pool.ntp.org)
+XSBC-Bugtracker: mailto:aapo.rantalainen@gmail.com
+
