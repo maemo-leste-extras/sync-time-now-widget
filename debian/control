@@ -1,13 +1,18 @@
 Source: sync-time-now-widget
 Section: user/network
-Priority: extra
-Maintainer: Aapo Rantalainen <aapo.rantalainen@gmail.com>
-Build-Depends: debhelper (>= 5), libhildondesktop1-dev, libhildon1-dev, libgtk2.0-dev, libtime-dev
-Standards-Version: 3.7.2
+Priority: optional
+Maintainer: Ivan J. <parazyd@dyne.org>
+Build-Depends:
+ debhelper-compat (= 12),
+ libhildondesktop1-dev,
+ libhildon1-dev,
+ libgtk2.0-dev,
+ libtime-dev,
+Standards-Version: 4.3.0
+Vcs-Git: https://github.com/maemo-leste-extras/sync-time-now-widget
+Vcs-Browser: https://github.com/maemo-leste-extras/sync-time-now-widget
 
 Package: sync-time-now-widget
 Architecture: any
-Depends: ${shlibs:Depends}, openrdate
+Depends: ${shlibs:Depends}, rdate
 Description: Status menu widget: button to sync time with rdate (from pool.ntp.org)
-XSBC-Bugtracker: mailto:aapo.rantalainen@gmail.com
-
