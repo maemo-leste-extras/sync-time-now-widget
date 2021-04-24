@@ -7,6 +7,7 @@ Build-Depends:
  libhildondesktop1-dev,
  libhildon1-dev,
  libgtk2.0-dev,
+ osso-af-settings,
  libtime-dev,
 Standards-Version: 4.3.0
 Vcs-Git: https://github.com/maemo-leste-extras/sync-time-now-widget
