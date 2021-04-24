@@ -1,3 +1,12 @@
+sync-time-now-widget (0.5) unstable; urgency=low
+
+  * Add missing libtime.
+  * configure.ac tweaks.
+  * Add osso-af-settings dependency.
+  * Port to autoconf.
+
+ -- Ivan J. <parazyd@dyne.org>  Sat, 24 Apr 2021 19:44:46 +0200
+
 sync-time-now-widget (0.4) unstable; urgency=low
 
   *  Icon fix2 by: Stefan Zwanenburg
