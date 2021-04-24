@@ -29,7 +29,7 @@ sync_time_now_menu_widget_class_init (SyncTimeNowMenuWidgetClass *klass)
 
 static void button_clicked_callback( GtkWidget *widget, gpointer   data )
 {
-  system("rdate -s -n pool.ntp.org"); //this set time
+  system("sudo /usr/bin/rdate -s -n pool.ntp.org"); //this set time
   time_set_time(time_get_time());     //this refresh clock
 }
 
