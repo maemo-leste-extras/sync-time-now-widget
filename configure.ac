@@ -18,6 +18,10 @@ PKG_CHECK_MODULES(LIBHILDONDESKTOP, libhildondesktop-1)
 AC_SUBST(LIBHILDONDESKTOP_CFLAGS)
 AC_SUBST(LIBHILDONDESKTOP_LIBS)
 
+PKG_CHECK_MODULES(LIBTIME, libtime)
+AC_SUBST(LIBTIME_CFLAGS)
+AC_SUBST(LIBTIME_LIBS)
+
 hildonstatusmenudesktopentrydir="`$PKG_CONFIG --variable=hildonstatusmenudesktopentrydir libhildondesktop-1`"
 AC_SUBST(hildonstatusmenudesktopentrydir)
 
