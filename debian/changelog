@@ -1,3 +1,9 @@
+sync-time-now-widget (0.7) unstable; urgency=low
+
+  * sync-time-now-widget.c: clockd include
+
+ -- Sander <core@kroket.io>  Fri, 19 Dec 2025 09:18:53 +0200
+
 sync-time-now-widget (0.6) unstable; urgency=low
 
   * Install sudoers entry to run rdate.

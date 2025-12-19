@@ -3,6 +3,7 @@
 #include <gtk/gtk.h>
 #include <hildon/hildon.h>
 #include <time.h>
+#include <clockd/libtime.h>
  
 #include "sync-time-now-menu-widget.h"
  
