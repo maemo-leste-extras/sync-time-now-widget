@@ -1,3 +1,9 @@
+sync-time-now-widget (0.8.1) unstable; urgency=low
+
+  * rdate binary path could be /usr/bin or /usr/sbin/
+
+ -- Sander <core@kroket.io>  Wed, 07 Dec 2026 18:18:53 +0200
+
 sync-time-now-widget (0.8) unstable; urgency=low
 
   * Makefile.am: link against LIBTIME_LIBS

@@ -28,12 +28,24 @@ sync_time_now_menu_widget_class_init (SyncTimeNowMenuWidgetClass *klass)
 }
 
 
-static void button_clicked_callback( GtkWidget *widget, gpointer   data )
+static void
+button_clicked_callback(GtkWidget *widget, gpointer data)
 {
-  system("sudo /usr/bin/rdate -s -n pool.ntp.org"); //this set time
-  time_set_time(time_get_time());     //this refresh clock
-}
+  const char *rdate_path = NULL;
 
+  if (access("/usr/bin/rdate", X_OK) == 0)
+    rdate_path = "/usr/bin/rdate";
+  else if (access("/usr/sbin/rdate", X_OK) == 0)
+    rdate_path = "/usr/sbin/rdate";
+
+  if (rdate_path)
+  {
+    char cmd[256];
+    snprintf(cmd, sizeof(cmd), "sudo %s -s -n pool.ntp.org", rdate_path);
+    system(cmd);
+    time_set_time(time_get_time());
+  }
+}
 
 static void
 sync_time_now_menu_widget_init (SyncTimeNowMenuWidget *plugin)
